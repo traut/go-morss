@@ -43,6 +43,7 @@ Note:
 	<ul>
 	<li>the schema <code>https://</code> is assumed for a feed URL</li>
 	<li>the new feed is returned in the format of the original feed (RSS / Atom / JSON)
+	<li>there is no cache support at the moment</li>
 	</ul>
 </p>
 </div>
@@ -167,7 +168,7 @@ func getHandlerFunc(itemsCap int) func(w http.ResponseWriter, req *http.Request)
 }
 
 func parseTimeParam(value string) (time.Time, error) {
-	return time.Parse("2006-01-02T15:04:05-0700", value)
+	return time.Parse("2006-01-02T15:04:05Z", value)
 }
 
 func processRequest(w http.ResponseWriter, req *http.Request, itemsCapByServer int) {
