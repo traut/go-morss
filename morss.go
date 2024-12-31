@@ -36,7 +36,8 @@ const (
 <p>
 	To use <code>go-morss</code> API, add a feed URL without a schema to the root endpoint:
 	<pre>&lt;go-morss-domain&gt;/&lt;feed-url-without-schema&gt;</pre>
-	For example, <a href="/news.ycombinator.com/rss"><code>&lt;this-domain&gt;/news.ycombinator.com/rss</code></a>. You can use this new URL in a feed reader or download the feed with a HTTP GET request.
+	For example, <a href="/news.ycombinator.com/rss"><code>&lt;this-domain&gt;/news.ycombinator.com/rss</code></a>.
+	You can use this new URL in a feed reader or download the feed with a HTTP GET request.
 </p>
 <p>
 Note:
