@@ -89,14 +89,14 @@ go run morss.go
 
 ### Dependencies
 
-- [`gofeed`](https://github.com/mmcdole/gofeed) for parsing feeds.
-- [`go-readability`](https://github.com/go-shiori/go-readability) for extracting readable content.
+- [`mmcdole/gofeed`](https://github.com/mmcdole/gofeed) for parsing feeds.
+- [`go-shiori/go-readability`](https://github.com/go-shiori/go-readability) for extracting readable content.
 - [`gorilla/feeds`](https://github.com/gorilla/feeds) for feed generation.
 
 ## Inspired By
 
-- [morss.it](https://morss.it/)
-- [`rss-fulltext-proxy`](https://github.com/Kombustor/rss-fulltext-proxy)
+- [morss.it](https://morss.it/) and [`pictuga/morss`](https://github.com/pictuga/morss)
+- [`Kombustor/rss-fulltext-proxy`](https://github.com/Kombustor/rss-fulltext-proxy)
 
 ## Contributing
 
