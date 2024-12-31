@@ -1,4 +1,4 @@
-module github.com/traut/rssfix
+module github.com/traut/go-morss
 
 go 1.23
 
