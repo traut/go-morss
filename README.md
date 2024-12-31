@@ -98,6 +98,7 @@ go run morss.go
 
 - [morss.it](https://morss.it/) and [`pictuga/morss`](https://github.com/pictuga/morss)
 - [`Kombustor/rss-fulltext-proxy`](https://github.com/Kombustor/rss-fulltext-proxy)
+- [Full-Text RSS Feeds](http://ftr.fivefilters.org/) by [FiveFilters.org](https://www.fivefilters.org/) 
 
 ## Contributing
 
