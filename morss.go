@@ -292,7 +292,7 @@ func processRequest(w http.ResponseWriter, req *http.Request, itemsCapByServer i
 	case "rss":
 		rssBody, err := feedNew.ToRss()
 		if err != nil {
-			log.ErrorContext(ctx, "Can't serialize new feed to JSON", "err", err)
+			log.ErrorContext(ctx, "Can't serialize new feed to RSS", "err", err)
 			http.Error(w, "Server error", http.StatusInternalServerError)
 			return
 		}
@@ -301,7 +301,7 @@ func processRequest(w http.ResponseWriter, req *http.Request, itemsCapByServer i
 	case "atom":
 		atomBody, err := feedNew.ToAtom()
 		if err != nil {
-			log.ErrorContext(ctx, "Can't serialize new feed to JSON", "err", err)
+			log.ErrorContext(ctx, "Can't serialize new feed to Atom", "err", err)
 			http.Error(w, "Server error", http.StatusInternalServerError)
 			return
 		}
@@ -340,7 +340,7 @@ func main() {
 	log.InfoContext(ctx, "Starting the server", "address", address)
 	err := http.ListenAndServe(address, nil)
 	if err != nil {
-		log.ErrorContext(ctx, "Can't start a server", "err", err)
+		log.ErrorContext(ctx, "Can't start the server", "err", err)
 		return
 	}
 }
