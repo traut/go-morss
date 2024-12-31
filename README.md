@@ -89,6 +89,7 @@ go run morss.go
 
 ### Dependencies
 
+- [`charmbracelet/log`](https://github.com/charmbracelet/log) for beautiful logs.
 - [`mmcdole/gofeed`](https://github.com/mmcdole/gofeed) for parsing feeds.
 - [`go-shiori/go-readability`](https://github.com/go-shiori/go-readability) for extracting readable content.
 - [`gorilla/feeds`](https://github.com/gorilla/feeds) for feed generation.
