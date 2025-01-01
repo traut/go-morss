@@ -211,8 +211,6 @@ func processRequest(w http.ResponseWriter, req *http.Request, itemsCapByServer i
 
 	fromTimeDefault := time.Now().Add(-defaultFromDaysAgo)
 
-	log.InfoContext(ctx, "DEFAULT", "def", fromTimeDefault, "dur")
-
 	var fromTime time.Time
 	fromTime = fromTimeDefault
 	if len(query[fromTimeParamName]) > 0 {
